@@ -12,6 +12,9 @@ class App extends Component {
         const orientation = ( width > height ) ? LANDSCAPE : PORTRAIT
         Store.changeOrientation(orientation)
     }
+    componentWillMount() {
+        Store.fetchImages()
+    }
     render() {
         return (
             <Provider store={Store}>
