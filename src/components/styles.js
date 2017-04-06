@@ -9,6 +9,10 @@ const styles = StyleSheet.create({
         width: null,
         height: null
     },
+    centered: {
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     backgroundImage: {
         flex: 1,
         justifyContent: 'flex-end',

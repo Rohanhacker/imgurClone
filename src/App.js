@@ -11,6 +11,7 @@ class App extends Component {
         const { width, height } = e.nativeEvent.layout
         const orientation = ( width > height ) ? LANDSCAPE : PORTRAIT
         Store.changeOrientation(orientation)
+        Store.updateScreenSize(width,height)
     }
     componentWillMount() {
         Store.fetchImages()
